@@ -1,9 +1,12 @@
-module github.com/containerd/cgroups/v3
+module github.com/Pigeon-Developer/cgroups
 
 go 1.22.0
 
+replace github.com/containerd/cgroups/v3 => .
+
 require (
 	github.com/cilium/ebpf v0.16.0
+	github.com/containerd/cgroups/v3 v3.0.0-00010101000000-000000000000
 	github.com/containerd/log v0.1.0
 	github.com/coreos/go-systemd/v22 v22.5.0
 	github.com/docker/go-units v0.5.0
